@@ -1,0 +1,295 @@
+body {
+    font-size: 14px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:  SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+    margin: 0 auto;
+
+    max-width: 1366px;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+#header {
+    /* border: 1px solid red; */
+
+    height: 64px;
+
+    padding: 1rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 58px;
+}
+
+/* #navigation {
+    border: 1px solid red;
+    background-color: #eee;
+} */
+
+#nav-list {
+    display: flex;
+}
+
+.tab {
+    /* border: 1px solid rgb(190, 32, 190); */
+    border-radius: 8px;
+
+    padding: 1rem 2rem;
+    /* margin-left: 1rem; */
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tab:hover {
+    /* background-color: rgba(112, 25, 112, 0.473); */
+    background-color: #ad82ff;
+    
+    cursor: pointer;
+}
+
+#banner {
+    position: relative;
+}
+
+#left {
+    position: absolute;
+    left: 0;
+    padding: 226px 0;
+    width: 48px;
+    background-color: rgba(128, 128, 128, 0.6);
+    cursor: pointer;
+
+}
+
+#right {
+    position: absolute;
+    right: 0;
+
+    padding: 226px 0;
+    width: 48px;
+
+    background-color: rgba(128, 128, 128, 0.6);
+    cursor: pointer;
+}
+
+#banner-img {
+    object-fit: contain;
+    width: 100%;
+    height: 500px;
+}
+
+#main-section {
+    margin: 1rem 4rem;
+}
+
+#main-header {
+    padding: 1rem 0;
+}
+
+#main-header span {
+    border-bottom: 2px solid black;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#product {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    padding: 8px 8px 48px 8px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+    overflow: hidden;
+
+    width: 260px;
+
+    position: relative;
+}
+
+#product div {
+    overflow: hidden;
+}
+
+#img {
+    object-fit: contain;
+
+    border-radius: 8px 8px 0 0;
+
+    /* height: 300px; */
+    width: 260px;
+}
+
+#name {
+    font-size: 14px;
+}
+
+#img:hover {
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+}
+
+#marking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8px;
+    font-size: 16px;
+
+    
+
+}
+
+#price { 
+    font-weight: bold;
+}
+
+#button {
+    width: 90%;
+    height: 36px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color:  #ae82ff;
+
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
+#button:hover {
+    cursor: pointer;
+    /* background-color:  #ae82ff;
+    color: white; */
+
+}
+
+#modal {
+    display: none;
+    padding: 50px 100px;
+    margin: auto 0;
+
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width:  90%;
+    height: 90%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(143, 143, 143); /* Fallback color */
+    background-color: rgb(240, 229, 229); 
+}
+
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 2rem;
+
+    font-size: 18px;
+
+    border-bottom: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+#cross:hover {
+    cursor: pointer;
+}
+
+#list {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+    padding: 0 2rem;
+    margin: 1rem 0;
+
+    /* border: 1px solid #aaa; */
+    border-radius: 4px;
+
+    /* text-align: left; */
+}
+
+#item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+}
+
+#item-img {
+    height: 100px;
+
+    padding-left: 1rem;
+
+    object-fit: contain;
+}
+
+#item-name {
+    font-size: 16px;
+    text-align: right;
+}
+
+#item-price {
+    width: 5%;
+}
+
+#total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+
+    padding: 0 2rem;
+    /* margin: .5rem 0; */
+
+    background-color: #eee;
+}
+
+#total button{
+    font-size: 16px;
+
+    width: 90%;
+    height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color:  #ae82ff;
+
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+
+}
+
+#total button:hover {
+    background-color:  #ae82ffe1;
+    cursor: pointer;
+}
+
+#total h4{
+    width: 10%;
+}
+

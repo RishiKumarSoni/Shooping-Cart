@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <img src="./images/logo.png" alt="logo" id="logo">
+
+        <nav id="navigation">
+            <li id="nav-list">
+                <ul class="tab">Home</ul>
+                <ul class="tab">Appearal</ul>
+                <ul class="tab">Accesories</ul>
+                <ul class="tab" id="myShoppingCart">My Shopping Cart <span id="cartAmount">(0)</span> </ul>
+            </li>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <img src="./images/arrow-left.png" alt="🠔" id="left">
+        <img src="" alt="banner-image" id="banner-img">
+        <img src="./images/right-arrow.png" alt="🠪" id="right">
+
+    </section>
+
+    <main id="main-section">
+        <h2 id="main-header">
+            <span>Product List</span>
+        </h2>
+
+        <div id="main-container">
+            
+        </div>
+    </main>
+
+    <section id="modal">
+        <div id="top">
+            <p>Cart Items</p>
+            <span id="cross">X</span>
+        </div>
+
+        <div id="list">
+            <div id="item">
+                <img id="item-img" src="./images/dummy.jpg" alt="cart-item-img">
+                <p id="item-name">Mens Hooded Sweatshirt</p>
+                <h4 id="item-price">$99.9</h4>
+            </div>
+            <div id="remove" onclick="clearCartItem();">&times;</div>
+        </div>
+
+        <div id="total">
+            <button type="button">Checkout</button>
+            <h4 class="totalPrice">Total: <span id="totalAmount">$0</span> </h4>
+        <div>
+    </section>
+
+</body>
+
+<script src="./js/app.js"></script>
+</html>
